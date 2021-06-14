@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, how can I help you today?", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I am a diagnostic bot. If you tell me your symptoms, I will attempt to diagnose your condition"],
+         "context": [""]
+        },
+        {"tag": "Depression_Diagnosis",
+         "patterns": ["I've been experiencing fatigue, depressed mood, suicidal thoughts, sleep disturbances, and irritability", "Depressed mood", "I don't like to do the things I used to do", "I have been very tired", "I have been having thoughts of suicide", "sad" ],
+         "responses": ["You may have major depressive disorder and I would advise you to schedule an appointment with your primary care physician to investigate further"],
+         "context": [""]
+        },
+        {"tag": "Diabetes_Diagnosis",
+         "patterns": ["I have been urinating frequently, I'm very thirsty, I am always tired, and I have blurry vision", "Numbness and tingling along with constant fatigue", "frequent urination and very tired", "My urine has a sweet smelling aroma", "Sweet-smelling pee", "my hands and feet are tingly" ],
+         "responses": ["You may have diabetes and I would advise you to schedule an appointment with your primary care physician to investigate further"],
+         "context": [""]
+        },
+        {"tag": "Arthritis_Diagnosis",
+         "patterns": ["I have been experiencing joint pain and limited range of motion", "stiffness", "swelling", "redness", "pain", "decreased dexterity", "I have been feeling a lot of joint paint", "Joint pain in my fingers" ],
+         "responses": ["You may have arthritis and I would advise you to schedule an appointment with your primary care physician to investigate further"],
+         "context": [""]
+        },
+        {"tag": "Clean_bill_of_health",
+         "patterns": ["I am virtually free of ailments, Bob", "no symptoms", "I feel totally awesome", "I can't believe how healthy I am.", "I have not been to the doctor in many moons."],
+         "responses": ["I'm pleased to inform you that your health is without flaw."],
+         "context": [""]
+        },
+        {"tag": "seek_more_information",
+         "patterns": ["I don't really know how I feel", "I don't feel so good", "I don't feel good", "I don't feel fine", "I have not been doing well recently" ],
+         "responses": ["Can you tell me a little bit more about the symptoms you've been experiencing?"],
+         "context": [""]
+        },
+        {"tag": "search_pharmacy_by_name",
+         "patterns": [],
+         "responses": ["Loading pharmacy details"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
